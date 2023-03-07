@@ -1,15 +1,18 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "index": {
+    "title": "Introduction",
+    "theme": {
+      "footer": false,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
   },
+  "design": "Project Design Documentation",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://twitter.com/NotShinigamii",
     "newWindow": true
   }
 }
