@@ -6,8 +6,8 @@ export default {
  head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="Halcyon" />
-      <meta property="og:description" content="Discover Adventure" />
+      <meta property="title" content="Halcyon" />
+      <meta property="description" content="Discover Adventure" />
     </>
   ),
   
