@@ -3,12 +3,13 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
 export default {
-head: () => {
-title: 'Halcyon'  },
-  banner: {
-    key: "0.0.1-Devlog",
-    text: <p>🎉 Halcyon is Currently in Development! 🎉</p>,
-  },
+ head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Nextra" />
+      <meta property="og:description" content="The next site builder" />
+    </>
+  ),
   
   project: {
     link: "https://github.com/Yumshot/Halcyon_Overview",
