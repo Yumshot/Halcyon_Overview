@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
+    "@types/gestalt": "^85.1.0",
+    "gestalt": "^98.0.22",
     "next": "^13.0.6",
     "next-seo": "^5.15.0",
     "nextra": "latest",

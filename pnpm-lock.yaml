@@ -1,7 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/gestalt': ^85.1.0
   '@types/node': 18.11.10
+  gestalt: ^98.0.22
   next: ^13.0.6
   next-seo: ^5.15.0
   nextra: latest
@@ -11,6 +13,8 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
+  '@types/gestalt': 85.1.0
+  gestalt: 98.0.22_biqbaboplfbrettd7655fr4n2y
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   next-seo: 5.15.0_6jx7hpii6hgsrmhxgqrmo3277u
   nextra: 2.2.17_6jx7hpii6hgsrmhxgqrmo3277u
@@ -346,6 +350,12 @@ packages:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: false
 
+  /@types/gestalt/85.1.0:
+    resolution: {integrity: sha512-UJVFdDU0cRa4T4EIUNzYVZYEbD1pNbW27RPQdw4gR3NB9eqFuHU40z6rldpKibJ+WJOtJygE3zSbPgRaQe7gmA==}
+    dependencies:
+      '@types/react': 18.0.25
+    dev: false
+
   /@types/hast/2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
     dependencies:
@@ -481,6 +491,10 @@ packages:
 
   /character-reference-invalid/2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
+    dev: false
+
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
     dev: false
 
   /client-only/0.0.1:
@@ -653,6 +667,26 @@ packages:
 
   /focus-visible/5.2.0:
     resolution: {integrity: sha512-Rwix9pBtC1Nuy5wysTmKy+UjbDJpIfg8eHjw0rjZ1mX4GNLz1Bmd16uDpI3Gk1i70Fgcs8Csg2lPm8HULFg9DQ==}
+    dev: false
+
+  /gestalt-design-tokens/98.0.22_gestalt@98.0.22:
+    resolution: {integrity: sha512-eUbyKgAh5u0+z1xAbmDO5+3LCK1cx6zK5ARbPJCLKm1rwZ8bmLHsUKQlXaBBmkNAzWOiq99IQ4kvwTKPnOVPgA==}
+    peerDependencies:
+      gestalt: '>0.0.0'
+    dependencies:
+      gestalt: 98.0.22_biqbaboplfbrettd7655fr4n2y
+    dev: false
+
+  /gestalt/98.0.22_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-gMzTE/IbZ0VhJE3R6TSvCsyoWAGFUg6GnZQqp8stRodgy8iiDMeBg10SJXxuavs3HzvxWDGqbK5Y0fEEWO18NA==}
+    peerDependencies:
+      react: ^18.0
+      react-dom: ^18.0
+    dependencies:
+      classnames: 2.3.2
+      gestalt-design-tokens: 98.0.22_gestalt@98.0.22
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /get-stream/3.0.0:
