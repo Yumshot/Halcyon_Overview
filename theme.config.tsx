@@ -1,15 +1,26 @@
 import React from "react";
-import { NextSeoProps } from "next-seo";
+import { useRouter } from 'next/router'
+import { useConfig } from 'nextra-theme-docs'
+
 export default {
+head: () => {
+    const { asPath, defaultLocale, locale } = useRouter()
+    const { frontMatter } = useConfig()
+    const url =
+      'https://halcyon-overview.vercel.app/' +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+      
+    return <>
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content={frontMatter.title || 'Nextra'} />
+      <meta property="og:description" content={frontMatter.description || 'The next site builder'} />
+    </>
+  },
   banner: {
     key: "0.0.1-Devlog",
     text: <p>🎉 Halcyon is Currently in Development! 🎉</p>,
   },
-  NextSeoProps() {
-    return {
-      titleTemplate: "%s – Halcyon",
-    };
-  },
+  
   project: {
     link: "https://github.com/Yumshot/Halcyon_Overview",
   },
