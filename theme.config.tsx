@@ -3,14 +3,11 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
 export default {
- head: (
-    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="title" content="Halcyon" />
-      <meta property="description" content="Discover Adventure" />
-    </>
-  ),
-  
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Halcyon'
+    }
+  },
   project: {
     link: "https://github.com/Yumshot/Halcyon_Overview",
   },
