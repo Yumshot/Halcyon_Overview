@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useNextSeoProps } from "next-seo";
 export default {
   banner: {
     key: "0.0.1-Devlog",
