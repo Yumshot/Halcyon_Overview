@@ -1,11 +1,11 @@
 import React from "react";
-import { useNextSeoProps } from "next-seo";
+import { NextSeoProps } from "next-seo";
 export default {
   banner: {
     key: "0.0.1-Devlog",
     text: <p>🎉 Halcyon is Currently in Development! 🎉</p>,
   },
-  useNextSeoProps() {
+  NextSeoProps() {
     return {
       titleTemplate: "%s – Halcyon",
     };
