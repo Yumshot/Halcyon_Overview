@@ -4,7 +4,7 @@ import { useConfig } from 'nextra-theme-docs'
 
 export default {
 head: () => {
-titleTemplate: '%s – Halcyon'  },
+title: 'Halcyon'  },
   banner: {
     key: "0.0.1-Devlog",
     text: <p>🎉 Halcyon is Currently in Development! 🎉</p>,
