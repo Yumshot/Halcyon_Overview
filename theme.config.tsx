@@ -12,8 +12,8 @@ head: () => {
       
     return <>
       <meta property="og:url" content={url} />
-      <meta property="og:title" content={frontMatter.title || 'Halcyon'} />
-      <meta property="og:description" content={frontMatter.description || 'Discover Adventure'} />
+      <meta property="og:title" content={'Halcyon'} />
+      <meta property="og:description" content={'Discover Adventure'} />
     </>
   },
   banner: {
